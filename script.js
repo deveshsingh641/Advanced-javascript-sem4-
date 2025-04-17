@@ -217,4 +217,108 @@
 
 
 
+//Immediately invoked function expression(IFE)
+
+// (function (){
+//     console.log("IIFE");
+// })();
+
+
+
+// (()=>{
+//     console.log("run right away");
+// })();
+
+
+//RECURSIVE FUNCTIONS
+
+// function getRecusrsive(nr){
+//     console.log(nr);
+//     if (nr>0){
+//     getRecusrsive(--nr);
+// }
+// }
+
+// getRecusrsive(3);
+
+
+// function logRecursive(nr){
+//     console.log("started function :",nr);
+//     if (nr >0){
+//         logRecursive(nr -1);
+//     }
+//     else{
+//         console.log("done with recursion");
+//     }
+//     console.log("Ended function :",nr);
+// }
+
+// logRecursive(0);
+
+//the performance of the recursion is slightly worse than the performance of the regular iteration using a loop
+
+
+//*************************NESTED FUNCTIONS****************** */
+
+// function doOuterFunctionStuff(nr){
+//     console.log("outer function:");
+//     function doInnerFunctionStuff(x){
+//         console.log(x+7);
+//     }
+// }
+// doOuterFunctionStuff(2);
+
+
+//*****************************ANONYMOUS FUNCTIONS*************** */
+
+// let functionVariable = function(){
+//     console.log("not so secret though");
+// };
+// functionVariable();
+
+
+// FUNCTION CALLBACKS
+
+// function doFlexibleStuff(executeStuff){
+//     executeStuff();
+//     console.log("inside doFlexibleStuffFunction");
+// }
+// doFlexibleStuff(functionVariable);
+
+
+
+// let youGotThis = function (){
+//     console.log("you are doing really great");
+
+// };
+
+// setTimeout(youGotThis,1000);
+
+
+
+// let youGotThis = function (){
+//     console.log("you are doing really great");
+
+// };
+
+// setInterval(youGotThis,1000);
+
+
+// let val=10;
+// function tester(val){
+//     val +=10;
+//     if(val <100){
+//         return tester(val);
+//     }
+//     return val;
+// }
+// tester(val);
+// console.log(val);
+
+
+// let test2 = (num) => num+5;
+// console.log(test2(14));
+
+
+
 
